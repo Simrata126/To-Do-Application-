@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h1 {
+    color: #bb86fc;
+}
+
+/* Form styles */
+.form-control {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-control:focus {
+    border-color: #bb86fc;
+    outline: none;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #bb86fc;
+    border-color: #bb86fc;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #a076fc;
+    border-color: #a076fc;
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transform: translateY(0);
+}
+
+.btn-lg:hover {
+    transform: translateY(-2px);
+}
+
+/* List item styles */
+.list-group-item {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #444;
+}
+
+.list-group-item .btn-danger {
+    background-color: #cf6679;
+    border-color: #cf6679;
+}
+
+.list-group-item .btn-danger:hover {
+    background-color: #b45666;
+    border-color: #b45666;
+}
+
+.list-group-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
